@@ -1,0 +1,220 @@
+@import "_fonts.scss";
+@import "_vars.scss";
+@import "_global.scss";
+
+.header {
+    padding: 25px 100px;
+    font-size: 16px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .header__logo {
+        }
+        .header__nav {
+            margin-left: 75px;
+            li {
+                font-family: "GothamMedium";
+                display: inline-block;
+                margin-right: 15px;
+                a {
+                    padding: 10px;
+                }
+            }
+        }
+        .header__btn {
+            margin-left: auto;
+            margin-right: 50px;
+            a {
+                color: #fff;
+                padding: 10px 20px;
+                background-color: $orange;
+                border-radius: 3px;
+            }
+        }
+        .header__social {
+            li {
+                display: inline-block;
+                a {
+                    padding: 9px;
+                    &:before {
+                        font-family: "icomoon" !important;
+                        font-size: 20px;
+                    }
+                    &.header__social-facebook {
+                        &:before {
+                            content: "\f09a";
+                        }
+                    }
+                    &.header__social-instagram {
+                        &:before {
+                            content: "\f16d";
+                        }
+                    }
+                    &.header__social-linkedin {
+                        &:before {
+                            content: "\f0e1";
+                        }
+                    }
+                    &.header__social-yelp {
+                        &:before {
+                            content: "\ead7";
+                        }
+                    }
+                    &.header__social-google {
+                        &:before {
+                            content: "\f1a0";
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.main-content {
+    .about {
+        padding: 70px 0;
+        margin-bottom: 100px;
+        color: #fff;
+        background: url(../images/about-bg.jpg) no-repeat;
+        min-height: 510px;
+        &__title {
+            font-family: "GothamBold";
+            font-size: 70px;
+            line-height: 80px;
+            max-width: 470px;
+            margin-bottom: 20px;
+        }
+        &__descr {
+            font-size: 21px;
+            margin-bottom: 50px;
+        }
+        &__btn {
+            a {
+                color: #fff;
+                padding: 15px 35px;
+                background-color: $orange;
+                border-radius: 3px;
+            }
+        }
+    }
+    .sessions {
+        display: flex;
+        justify-content: space-between;
+        &__block {
+            background-color: #222;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            padding-top: 120px;
+            align-items: center;
+            width: 50%;
+            &-title {
+                font-family: "GothamBold";
+                font-size: 30px;
+                text-transform: uppercase;
+                position: relative;
+                margin-bottom: 100px;
+                &:before {
+                    position: absolute;
+                    content: "\e901";
+                    font-family: "icomoon" !important;
+                    font-size: 50px;
+                    top: -50px;
+                    right: 60%;
+                    transform: translateX(100%);
+                    color: $orange;
+                }
+            }
+            &-info {
+                margin-left: 30px;
+                max-width: 400px;
+                width: 100%;
+                div {
+                    font-family: "GothamMedium";
+                    &:first-child {
+                        &:before {
+                            left: -45px;
+                        }
+                        &:after {
+                            left: -30px;
+                        }
+                    }
+                    &:before {
+                        position: absolute;
+                        font-family: "GothamBold";
+                        left: -50px;
+                        bottom: 0;
+                        font-size: 80px;
+                        color: #4e4e4e;
+                    }
+                    &:after {
+                        position: absolute;
+                        content: "";
+                        max-width: 400px;
+                        width: 100%;
+                        height: 1px;
+                        background-color: #4e4e4e;
+                        bottom: -13px;
+                        left: -35px;
+                    }
+                }
+            }
+            &-studio {
+                margin-bottom: 80px;
+                position: relative;
+                padding-left: 30px;
+                &:before {
+                    content: "1";
+                    left: -40px;
+                }
+            }
+            &-outdoor {
+                margin-bottom: 80px;
+                position: relative;
+                padding-left: 30px;
+                &:before {
+                    content: "2";
+                }
+            }
+            &-office {
+                margin-bottom: 80px;
+                position: relative;
+                padding-left: 30px;
+                &:before {
+                    content: "3";
+                }
+            }
+            &-btn {
+                margin-bottom: 115px;
+                text-align: center;
+                a {
+                    color: #fff;
+                    padding: 15px 65px;
+                    background-color: $orange;
+                }
+            }
+            &--white {
+                background-color: #f6f6f6;
+                color: #222;
+                .sessions__block-title{
+                    &:before{
+                        content: '\e905';
+                    }
+                }
+                .sessions__block-info {
+                    div {
+                        &:before {
+                            color: #ccc;
+                        }
+                        &:after {
+                            background-color: #ccc;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@import "_media.scss";

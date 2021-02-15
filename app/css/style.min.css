@@ -1,0 +1,379 @@
+@font-face {
+  font-family: "GothamBold";
+  src: url("../fonts/");
+  src: url("../fonts/GothamBold/fonts/Gotham Bold.eot") format("embedded-opentype"), url("../fonts/GothamBold/fonts/Gotham Bold.svg") format("truetype"), url("../fonts/GothamBold/fonts/Gotham Bold.ttf") format("woff"), url("../fonts/GothamBold/fonts/Gotham Bold.woff") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "GothamMedium";
+  src: url("../fonts/");
+  src: url("../fonts/GothamMedium/fonts/Gotham Medium.eot") format("embedded-opentype"), url("../fonts/GothamMedium/fonts/Gotham Medium.svg") format("truetype"), url("../fonts/GothamMedium/fonts/Gotham Medium.ttf") format("woff"), url("../fonts/GothamMedium/fonts/Gotham Medium.woff") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "GothamBook";
+  src: url("../fonts/");
+  src: url("../fonts/GothamBook/fonts/Gotham Book.eot") format("embedded-opentype"), url("../fonts/GothamBook/fonts/Gotham Book.svg") format("truetype"), url("../fonts/GothamBook/fonts/Gotham Book.ttf") format("woff"), url("../fonts/GothamBook/fonts/Gotham Book.woff") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon/icomoon.eot?j16u9c");
+  src: url("../fonts/icomoon/icomoon.eot?j16u9c#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?j16u9c") format("truetype"), url("fonts/icomoon.woff?j16u9c") format("woff"), url("../fonts/icomoon/icomoon.svg?j16u9c#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-group-outline:before {
+  content: "\e905";
+}
+
+.icon-user:before {
+  content: "\e901";
+}
+
+.icon-message:before {
+  content: "\e900";
+}
+
+.icon-arrow-thin-right:before {
+  content: "\e902";
+}
+
+.icon-arrow-thin-left:before {
+  content: "\e903";
+}
+
+.icon-facebook:before {
+  content: "\f09a";
+}
+
+.icon-facebook-f:before {
+  content: "\f09a";
+}
+
+.icon-linkedin:before {
+  content: "\f0e1";
+}
+
+.icon-instagram:before {
+  content: "\f16d";
+}
+
+.icon-google:before {
+  content: "\f1a0";
+}
+
+.icon-yelp:before {
+  content: "\ead7";
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: "GothamBook";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #000;
+}
+
+.container {
+  max-width: 1560px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.header {
+  padding: 25px 100px;
+  font-size: 16px;
+}
+
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__inner .header__nav {
+  margin-left: 75px;
+}
+
+.header__inner .header__nav li {
+  font-family: "GothamMedium";
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.header__inner .header__nav li a {
+  padding: 10px;
+}
+
+.header__inner .header__btn {
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.header__inner .header__btn a {
+  color: #fff;
+  padding: 10px 20px;
+  background-color: #ff3c2d;
+  border-radius: 3px;
+}
+
+.header__inner .header__social li {
+  display: inline-block;
+}
+
+.header__inner .header__social li a {
+  padding: 9px;
+}
+
+.header__inner .header__social li a:before {
+  font-family: "icomoon" !important;
+  font-size: 20px;
+}
+
+.header__inner .header__social li a.header__social-facebook:before {
+  content: "\f09a";
+}
+
+.header__inner .header__social li a.header__social-instagram:before {
+  content: "\f16d";
+}
+
+.header__inner .header__social li a.header__social-linkedin:before {
+  content: "\f0e1";
+}
+
+.header__inner .header__social li a.header__social-yelp:before {
+  content: "\ead7";
+}
+
+.header__inner .header__social li a.header__social-google:before {
+  content: "\f1a0";
+}
+
+.main-content .about {
+  padding: 70px 0;
+  margin-bottom: 100px;
+  color: #fff;
+  background: url(../images/about-bg.jpg) no-repeat;
+  min-height: 510px;
+}
+
+.main-content .about__title {
+  font-family: "GothamBold";
+  font-size: 70px;
+  line-height: 80px;
+  max-width: 470px;
+  margin-bottom: 20px;
+}
+
+.main-content .about__descr {
+  font-size: 21px;
+  margin-bottom: 50px;
+}
+
+.main-content .about__btn a {
+  color: #fff;
+  padding: 15px 35px;
+  background-color: #ff3c2d;
+  border-radius: 3px;
+}
+
+.main-content .sessions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-content .sessions__block {
+  background-color: #222;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 120px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+
+.main-content .sessions__block-title {
+  font-family: "GothamBold";
+  font-size: 30px;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.main-content .sessions__block-title:before {
+  position: absolute;
+  content: "\e901";
+  font-family: "icomoon" !important;
+  font-size: 50px;
+  top: -50px;
+  right: 60%;
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+  color: #ff3c2d;
+}
+
+.main-content .sessions__block-info {
+  margin-left: 30px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.main-content .sessions__block-info div {
+  font-family: "GothamMedium";
+}
+
+.main-content .sessions__block-info div:first-child:before {
+  left: -45px;
+}
+
+.main-content .sessions__block-info div:first-child:after {
+  left: -30px;
+}
+
+.main-content .sessions__block-info div:before {
+  position: absolute;
+  font-family: "GothamBold";
+  left: -50px;
+  bottom: 0;
+  font-size: 80px;
+  color: #4e4e4e;
+}
+
+.main-content .sessions__block-info div:after {
+  position: absolute;
+  content: "";
+  max-width: 400px;
+  width: 100%;
+  height: 1px;
+  background-color: #4e4e4e;
+  bottom: -13px;
+  left: -35px;
+}
+
+.main-content .sessions__block-studio {
+  margin-bottom: 80px;
+  position: relative;
+  padding-left: 30px;
+}
+
+.main-content .sessions__block-studio:before {
+  content: "1";
+  left: -40px;
+}
+
+.main-content .sessions__block-outdoor {
+  margin-bottom: 80px;
+  position: relative;
+  padding-left: 30px;
+}
+
+.main-content .sessions__block-outdoor:before {
+  content: "2";
+}
+
+.main-content .sessions__block-office {
+  margin-bottom: 80px;
+  position: relative;
+  padding-left: 30px;
+}
+
+.main-content .sessions__block-office:before {
+  content: "3";
+}
+
+.main-content .sessions__block-btn {
+  margin-bottom: 115px;
+  text-align: center;
+}
+
+.main-content .sessions__block-btn a {
+  color: #fff;
+  padding: 15px 65px;
+  background-color: #ff3c2d;
+}
+
+.main-content .sessions__block--white {
+  background-color: #f6f6f6;
+  color: #222;
+}
+
+.main-content .sessions__block--white .sessions__block-title:before {
+  content: '\e905';
+}
+
+.main-content .sessions__block--white .sessions__block-info div:before {
+  color: #ccc;
+}
+
+.main-content .sessions__block--white .sessions__block-info div:after {
+  background-color: #ccc;
+}

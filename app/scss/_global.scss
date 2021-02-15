@@ -1,0 +1,33 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: "GothamBook";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #000;
+}
+
+.container{
+    max-width: 1560px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+ul,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
