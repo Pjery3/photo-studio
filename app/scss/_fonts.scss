@@ -45,6 +45,15 @@
     font-display: block;
 }
 
+@font-face {
+    font-family: "Tahu!";
+    src: url("../fonts/tahu/Tahu!.eot");
+    src: local("☺"), url("../fonts/tahu/Tahu!.woff") format("woff"), url("../fonts/tahu/Tahu!.ttf") format("truetype"),
+        url("../fonts/tahu/Tahu!.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
 [class^="icon-"],
 [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */

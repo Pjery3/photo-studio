@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "GothamBold";
   src: url("../fonts/");
@@ -32,6 +33,14 @@
   font-weight: normal;
   font-style: normal;
   font-display: block;
+}
+
+@font-face {
+  font-family: "Tahu!";
+  src: url("../fonts/tahu/Tahu!.eot");
+  src: local("☺"), url("../fonts/tahu/Tahu!.woff") format("woff"), url("../fonts/tahu/Tahu!.ttf") format("truetype"), url("../fonts/tahu/Tahu!.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 [class^="icon-"],
@@ -438,4 +447,259 @@ iframe {
   background-color: #ff3c2d;
   color: #fff;
   display: block;
+}
+
+.main-content .services {
+  padding: 115px 0 150px;
+  text-align: center;
+}
+
+.main-content .services__title {
+  font-family: "GothamBold";
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.main-content .services__inner {
+  position: relative;
+}
+
+.main-content .services__inner .services__photos {
+  max-width: 760px;
+  width: 100%;
+  margin-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-content .services__inner .services__photos .services__photo {
+  position: relative;
+  width: 350px;
+  height: 385px;
+  outline: none;
+  display: block;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.main-content .services__inner .services__photos .services__photo-info {
+  opacity: 0;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  position: absolute;
+  left: 20px;
+  bottom: 10px;
+  text-align: left;
+}
+
+.main-content .services__inner .services__photos .services__photo-info .services__photo-comp a {
+  color: #fff;
+  padding: 7px 14px;
+  background-color: #ff3c2d;
+  font-size: 12px;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+
+.main-content .services__inner .services__photos .services__photo-info .services__photo-check {
+  position: relative;
+  padding-right: 25px;
+}
+
+.main-content .services__inner .services__photos .services__photo-info .services__photo-check a {
+  color: #fff;
+}
+
+.main-content .services__inner .services__photos .services__photo-info .services__photo-check a:after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  content: "\e902";
+  font-family: "icomoon" !important;
+  color: #fff;
+}
+
+.main-content .services__inner .services__photos .services__photo:hover .services__photo-info {
+  opacity: 1;
+  -webkit-transition: all 0.35s;
+  -o-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.main-content .services__inner .services__photos .slick-prev,
+.main-content .services__inner .services__photos .slick-next {
+  position: absolute;
+  bottom: -30px;
+  font-size: 0;
+  border: 0;
+  background-color: #eff3f8;
+  outline: none;
+  cursor: pointer;
+  padding: 17px 150px;
+}
+
+.main-content .services__inner .services__photos .slick-prev:before,
+.main-content .services__inner .services__photos .slick-next:before {
+  bottom: 5px;
+}
+
+.main-content .services__inner .services__photos .slick-prev.slick-disabled:before,
+.main-content .services__inner .services__photos .slick-next.slick-disabled:before {
+  color: #ccc;
+}
+
+.main-content .services__inner .services__photos .slick-prev {
+  left: 0px;
+}
+
+.main-content .services__inner .services__photos .slick-prev::before {
+  content: "\e903";
+  font-family: "icomoon";
+  position: absolute;
+  font-size: 20px;
+}
+
+.main-content .services__inner .services__photos .slick-next {
+  right: 30px;
+}
+
+.main-content .services__inner .services__photos .slick-next::before {
+  content: "\e902";
+  font-family: "icomoon";
+  position: absolute;
+  font-size: 20px;
+}
+
+.main-content .services__inner .services__photos .slick-slide {
+  outline: none;
+}
+
+.main-content .services__inner .services__btns {
+  margin-bottom: 60px;
+}
+
+.main-content .services__inner .services__btns button {
+  background-color: #fff;
+  position: relative;
+  color: #ababab;
+}
+
+.main-content .services__inner .services__btns button.mixitup-control-active {
+  color: #000;
+}
+
+.main-content .services__inner .services__btns button.mixitup-control-active:before {
+  position: absolute;
+  content: "";
+  bottom: -3px;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background-color: #ff3c2d;
+}
+
+.main-content .headshots {
+  padding: 80px 0 100px;
+  background-color: #f6f6f6;
+}
+
+.main-content .headshots__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-content .headshots__inner .headshots__text {
+  max-width: 640px;
+  position: relative;
+}
+
+.main-content .headshots__inner .headshots__text-title {
+  font-family: "GothamBold";
+  font-size: 50px;
+  line-height: 55px;
+  margin-bottom: 35px;
+}
+
+.main-content .headshots__inner .headshots__text-arrow {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+}
+
+.main-content .headshots__inner .headshots__tips-title {
+  font-family: "Tahu!";
+  font-size: 60px;
+  line-height: 55px;
+  margin-bottom: 80px;
+  padding-top: 10px;
+}
+
+.main-content .headshots__inner .headshots__tips-items {
+  max-width: 750px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-content .headshots__inner .headshots__tips-items .headshots__tips-item {
+  max-width: 350px;
+  position: relative;
+  padding-left: 95px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 45px;
+  line-height: 24px;
+}
+
+.main-content .headshots__inner .headshots__tips-items .headshots__tips-item object {
+  position: absolute;
+  content: "";
+  top: 50%;
+  -webkit-transform: translateY(-75%);
+      -ms-transform: translateY(-75%);
+          transform: translateY(-75%);
+  left: 15px;
+}
+
+.main-content .headshots__inner .headshots__tips-items .headshots__tips-item:first-child object {
+  left: 0px;
+}
+
+.main-content .headshots__inner .headshots__tips-items .headshots__tips-item:nth-child(3) object {
+  left: -5px;
+}
+
+.main-content .headshots__inner .headshots__tips-items .headshots__tips-item:last-child {
+  margin-left: auto;
+  margin-bottom: 0;
+}
+
+.main-content .headshots__service {
+  margin-left: 90px;
+  background-color: #222;
+  padding: 50px 120px 60px 80px;
+  max-width: 1060px;
+  color: #fff;
+}
+
+.main-content .headshots__service-title {
+  text-transform: uppercase;
+  font-family: "GothamBold";
+}
+
+.main-content .headshots__service-text {
+  font-size: 16px;
 }

@@ -252,6 +252,221 @@
             }
         }
     }
+    .services {
+        padding: 115px 0 150px;
+        text-align: center;
+        &__title {
+            font-family: "GothamBold";
+            font-size: 50px;
+            margin-bottom: 50px;
+        }
+        &__inner {
+            position: relative;
+
+            .services__photos {
+                max-width: 760px;
+                width: 100%;
+                margin-right: 15px;
+                display: flex;
+                flex-wrap: wrap;
+                .services__photo {
+                    position: relative;
+                    width: 350px;
+                    height: 385px;
+                    outline: none;
+                    display: block;
+                    margin-bottom: 20px;
+                    margin-right: 20px;
+                    &-info {
+                        opacity: 0;
+                        transition: all 0.2s;
+                        position: absolute;
+                        left: 20px;
+                        bottom: 10px;
+                        text-align: left;
+                        .services__photo-comp {
+                            a {
+                                color: #fff;
+                                padding: 7px 14px;
+                                background-color: $orange;
+                                font-size: 12px;
+                                text-transform: uppercase;
+                                border-radius: 3px;
+                            }
+                        }
+                        .services__photo-check {
+                            position: relative;
+                            padding-right: 25px;
+                            a {
+                                color: #fff;
+                                &:after {
+                                    position: absolute;
+                                    right: 0;
+                                    top: 0;
+                                    content: "\e902";
+                                    font-family: "icomoon" !important;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                    &:hover {
+                        .services__photo-info {
+                            opacity: 1;
+                            transition: all 0.35s;
+                        }
+                    }
+                }
+                .slick-prev,
+                .slick-next {
+                    position: absolute;
+                    bottom: -30px;
+                    font-size: 0;
+                    border: 0;
+                    background-color: #eff3f8;
+                    outline: none;
+                    cursor: pointer;
+                    padding: 17px 150px;
+                    &:before {
+                        bottom: 5px;
+                    }
+                    &.slick-disabled {
+                        &:before {
+                            color: #ccc;
+                        }
+                    }
+                }
+                .slick-prev {
+                    left: 0px;
+                    &::before {
+                        content: "\e903";
+                        font-family: "icomoon";
+                        position: absolute;
+                        font-size: 20px;
+                    }
+                }
+
+                .slick-next {
+                    right: 30px;
+                    &::before {
+                        content: "\e902";
+                        font-family: "icomoon";
+                        position: absolute;
+                        font-size: 20px;
+                    }
+                }
+                .slick-slide {
+                    outline: none;
+                }
+            }
+
+            .services__btns {
+                margin-bottom: 60px;
+                button {
+                    background-color: #fff;
+                    position: relative;
+                    color: #ababab;
+                    &.mixitup-control-active {
+                        color: #000;
+                        &:before {
+                            position: absolute;
+                            content: "";
+                            bottom: -3px;
+                            left: 0;
+                            width: 20px;
+                            height: 2px;
+                            background-color: $orange;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .headshots {
+        padding: 80px 0 100px;
+        background-color: #f6f6f6;
+        &__inner {
+            display: flex;
+            justify-content: space-between;
+            .headshots__text {
+                max-width: 640px;
+                position: relative;
+                &-title {
+                    font-family: "GothamBold";
+                    font-size: 50px;
+                    line-height: 55px;
+                    margin-bottom: 35px;
+                }
+                &-descr {
+                }
+                &-arrow{
+                    position: absolute;
+                    bottom: -50px;
+                    left: 0;
+                }
+            }
+            .headshots__tips {
+                &-title {
+                    font-family: "Tahu!";
+                    font-size: 60px;
+                    line-height: 55px;
+                    margin-bottom: 80px;
+                    padding-top: 10px;
+                }
+                &-items {
+                    max-width: 750px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    .headshots__tips-item {
+                        max-width: 350px;
+                        position: relative;
+                        padding-left: 95px;
+                        padding-bottom: 20px;
+                        border-bottom: 2px solid #ccc;
+                        margin-bottom: 45px;
+                        line-height: 24px;
+                        object {
+                            position: absolute;
+                            content: "";
+                            top: 50%;
+                            transform: translateY(-75%);
+                            left: 15px;
+                        }
+                        &:first-child{
+                            object{
+                                left: 0px;
+                            }
+                        }
+                        &:nth-child(3){
+                            object{
+                               left: -5px; 
+                            }
+                            
+                        }
+                        &:last-child {
+                            margin-left: auto; 
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+        &__service {
+            margin-left: 90px;
+            background-color: #222;
+            padding: 50px 120px 60px 80px;
+            max-width: 1060px;
+            color: #fff;
+            &-title {
+                text-transform: uppercase;
+                font-family: "GothamBold";
+            }
+            &-text {
+                font-size: 16px;
+            }
+        }
+    }
 }
 
 @import "_media.scss";
