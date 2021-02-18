@@ -839,3 +839,99 @@ iframe {
   background-color: #ff3c2d;
   border-radius: 3px;
 }
+
+.main-content .blog {
+  padding: 90px 0 120px;
+  text-align: center;
+}
+
+.main-content .blog__title {
+  font-size: 50px;
+  font-family: "GothamBold";
+  line-height: 55px;
+  margin-bottom: 25px;
+}
+
+.main-content .blog__descr {
+  margin-bottom: 75px;
+}
+
+.main-content .blog__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: left;
+  margin-bottom: 60px;
+}
+
+.main-content .blog__items .blog__item {
+  max-width: 386px;
+  margin: 12px;
+  background-color: #f6f6f6;
+}
+
+.main-content .blog__items .blog__item-title {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: "GothamBold";
+  line-height: 28px;
+}
+
+.main-content .blog__items .blog__item-comments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-content .blog__items .blog__item-comments a {
+  font-size: 16px;
+  color: #ff3c2d;
+  position: relative;
+  padding-left: 30px;
+}
+
+.main-content .blog__items .blog__item-comments a:before {
+  position: absolute;
+  content: '\e900';
+  font-family: "icomoon" !important;
+  font-size: 22px;
+  left: 0;
+  bottom: -16px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.main-content .blog__items .blog__item-date {
+  font-size: 16px;
+  color: #ababab;
+  padding-left: auto;
+}
+
+.main-content .blog__items .blog__item .blog__item-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 200px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 25px;
+}
+
+.main-content .blog__btn a {
+  color: #fff;
+  padding: 15px 60px;
+  background-color: #ff3c2d;
+  border-radius: 3px;
+}

@@ -550,7 +550,7 @@
     }
     .fast {
         padding: 140px 0 160px;
-        background: url(../images/fast-bg.jpg)no-repeat center center;
+        background: url(../images/fast-bg.jpg) no-repeat center center;
         background-size: cover;
         min-height: 400px;
         color: #fff;
@@ -565,12 +565,84 @@
                 line-height: 55px;
             }
             .fast__btn {
-                a{
+                a {
                     padding: 17px 70px;
                     color: #fff;
                     background-color: $orange;
                     border-radius: 3px;
                 }
+            }
+        }
+    }
+    .blog {
+        padding: 90px 0 120px;
+        text-align: center;
+        &__title {
+            font-size: 50px;
+            font-family: "GothamBold";
+            line-height: 55px;
+            margin-bottom: 25px;
+        }
+        &__descr {
+            margin-bottom: 75px;
+        }
+        &__items {
+            display: flex;
+            justify-content: center;
+            text-align: left;
+            margin-bottom: 60px;
+            .blog__item {
+                max-width: 386px;
+                margin: 12px;
+                background-color: #f6f6f6;
+                &-img {
+                }
+                &-title {
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    font-family: "GothamBold";
+                    line-height: 28px;
+                }
+                &-comments {
+                    display: flex;
+                    justify-content: space-between;
+                    a {
+                        font-size: 16px;
+                        color: $orange;
+                        position: relative;
+                        padding-left: 30px;
+                        &:before{
+                            position: absolute;
+                            content: '\e900';
+                            font-family: "icomoon" !important;
+                            font-size: 22px;
+                            left: 0;
+                            bottom: -16px;
+                            transform: translateY(-50%)
+                        }
+                    }
+                }
+                &-date {
+                    font-size: 16px;
+                    color: #ababab;
+                    padding-left: auto;
+                    
+                }
+                .blog__item-info{
+                    display: flex;
+                    min-height: 200px;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    padding: 20px 25px;
+                }
+            }
+        }
+        &__btn {
+            a{
+                color: #fff;
+                padding: 15px 60px;
+                background-color: $orange;
+                border-radius: 3px;
             }
         }
     }
