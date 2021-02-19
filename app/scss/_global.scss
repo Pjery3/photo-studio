@@ -1,13 +1,13 @@
-html{
+html {
     box-sizing: border-box;
 }
 *,
 *::before,
-*::after{
+*::after {
     box-sizing: inherit;
 }
 
-body{
+body {
     font-family: "GothamBook";
     font-weight: 400;
     font-size: 18px;
@@ -15,33 +15,40 @@ body{
     color: #000;
 }
 
-.container{
+.container {
     max-width: 1560px;
     padding: 0 15px;
     margin: 0 auto;
 }
 
-ul,li{
+ul,
+li {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-input{
+input {
     outline: none;
     border: none;
 }
-button{
+button {
     border: none;
     outline: none;
     cursor: pointer;
 }
 
-a{
+a {
     text-decoration: none;
     color: #000;
 }
 
 img,
-iframe{
+iframe {
     display: block;
+}
+
+.logo {
+    font-family: "Tahu!";
+    font-size: 60px;
+    vertical-align: middle;
 }

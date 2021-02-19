@@ -27,15 +27,6 @@
 }
 
 @font-face {
-  font-family: "icomoon";
-  src: url("../fonts/icomoon/icomoon.eot?j16u9c");
-  src: url("../fonts/icomoon/icomoon.eot?j16u9c#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?j16u9c") format("truetype"), url("fonts/icomoon.woff?j16u9c") format("woff"), url("../fonts/icomoon/icomoon.svg?j16u9c#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-
-@font-face {
   font-family: "Tahu!";
   src: url("../fonts/tahu/Tahu!.eot");
   src: local("☺"), url("../fonts/tahu/Tahu!.woff") format("woff"), url("../fonts/tahu/Tahu!.ttf") format("truetype"), url("../fonts/tahu/Tahu!.svg") format("svg");
@@ -43,10 +34,18 @@
   font-style: normal;
 }
 
-[class^="icon-"],
-[class*=" icon-"] {
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon/icomoon.eot?6tkfjg");
+  src: url("../fonts/icomoon/icomoon.eot?6tkfjg#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?6tkfjg") format("truetype"), url("../fonts/icomoon/icomoon.woff?6tkfjg") format("woff"), url("../fonts/icomoon/icomoon.svg?6tkfjg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "icomoon" !important;
+  font-family: 'icomoon' !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -76,6 +75,10 @@
 
 .icon-arrow-thin-left:before {
   content: "\e903";
+}
+
+.icon-map-marker:before {
+  content: "\f041";
 }
 
 .icon-facebook:before {
@@ -128,7 +131,8 @@ body {
   margin: 0 auto;
 }
 
-ul, li {
+ul,
+li {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -153,6 +157,12 @@ a {
 img,
 iframe {
   display: block;
+}
+
+.logo {
+  font-family: "Tahu!";
+  font-size: 60px;
+  vertical-align: middle;
 }
 
 .header {
@@ -235,7 +245,7 @@ iframe {
   padding: 70px 0;
   margin-bottom: 100px;
   color: #fff;
-  background: url(../images/about-bg.jpg) no-repeat;
+  background: url(../images/about-bg.jpg) no-repeat center center;
   min-height: 510px;
 }
 
@@ -764,7 +774,7 @@ iframe {
 }
 
 .main-content .clients__items .clients__item.slick-slide {
-  margin-right: 45px;
+  margin: 0 20px 0 20px;
   outline: none;
 }
 
@@ -898,7 +908,7 @@ iframe {
 
 .main-content .blog__items .blog__item-comments a:before {
   position: absolute;
-  content: '\e900';
+  content: "\e900";
   font-family: "icomoon" !important;
   font-size: 22px;
   left: 0;
@@ -934,4 +944,177 @@ iframe {
   padding: 15px 60px;
   background-color: #ff3c2d;
   border-radius: 3px;
+}
+
+.main-content .footer {
+  background-color: #222;
+  padding-top: 90px;
+  font-size: 16px;
+}
+
+.main-content .footer__cols {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 60px;
+}
+
+.main-content .footer__cols .footer__col {
+  color: #fff;
+}
+
+.main-content .footer__cols .footer__col a {
+  color: #fff;
+}
+
+.main-content .footer__cols .footer__col-logo {
+  margin-bottom: 210px;
+}
+
+.main-content .footer__cols .footer__col-logo .logo {
+  color: #fff;
+}
+
+.main-content .footer__cols .footer__col-titles {
+  font-size: 21px;
+  margin-bottom: 30px;
+  color: #626262;
+}
+
+.main-content .footer__cols .footer__col-location span {
+  padding-left: 25px;
+  display: block;
+}
+
+.main-content .footer__cols .footer__col-location span:first-child {
+  position: relative;
+}
+
+.main-content .footer__cols .footer__col-location span:first-child:before {
+  position: absolute;
+  left: 0;
+  top: -20px;
+  -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+          transform: translateY(50%);
+  font-size: 23px;
+  content: "\f041";
+  font-family: "icomoon" !important;
+}
+
+.main-content .footer__cols .footer__col-links {
+  margin-bottom: 75px;
+}
+
+.main-content .footer__cols .footer__col-links li {
+  margin-bottom: 5px;
+}
+
+.main-content .footer__cols .footer__col-links li a {
+  padding: 5px;
+}
+
+.main-content .footer__cols .footer__col-contacts {
+  border-bottom: 1px solid #ff3c2d;
+}
+
+.main-content .footer__cols .footer__col-contacts > * {
+  font-size: 30px;
+  line-height: 42px;
+  margin-top: 5px;
+}
+
+.main-content .footer__cols .footer__col-email {
+  padding-bottom: 5px;
+}
+
+.main-content .footer__cols .footer__col-rsrc li {
+  padding-bottom: 10px;
+}
+
+.main-content .footer__cols .footer__col-rsrc li a {
+  padding: 5px;
+  padding-left: 35px;
+  position: relative;
+}
+
+.main-content .footer__cols .footer__col-rsrc li a:before {
+  position: absolute;
+  content: "\e902";
+  font-family: "icomoon" !important;
+  font-size: 16px;
+  left: 0;
+  bottom: 0px;
+  color: #626262;
+}
+
+.main-content .footer__cols .footer__col-social li {
+  margin-bottom: 5px;
+}
+
+.main-content .footer__cols .footer__col-social li a {
+  padding: 10px;
+  border-bottom: 1px solid #444444;
+}
+
+.main-content .footer__cols .footer__col-fluid {
+  max-width: 350px;
+  width: 100%;
+}
+
+.main-content .footer__cols .footer__col:nth-child(1) {
+  max-width: 400px;
+  width: 100%;
+}
+
+.main-content .footer__cols .footer__col:nth-child(2) {
+  max-width: 350px;
+  width: 100%;
+}
+
+.main-content .footer__cols .footer__col:nth-child(3) {
+  max-width: 640px;
+  width: 100%;
+}
+
+.main-content .footer__cols .footer__col:nth-child(4) {
+  max-width: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-align: right;
+}
+
+.main-content .footer__bottom {
+  font-size: 18px;
+  padding: 25px;
+  border-top: 1px solid #393939;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: #4e4e4e;
+}
+
+.main-content .footer__bottom-rights {
+  grid-column: 2;
+  justify-self: center;
+}
+
+.main-content .footer__bottom-policy {
+  grid-column: 3;
+  justify-self: flex-end;
+  justify-self: center;
+}
+
+.main-content .footer__bottom-policy a {
+  color: #4e4e4e;
 }
