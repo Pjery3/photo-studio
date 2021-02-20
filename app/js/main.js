@@ -6,27 +6,27 @@ $(function () {
         dots: true,
         slidesToShow: 3,
         slidesToScroll: 3,
-        autoplay: true,
+        // autoplay: true,
         responsive: [
             {
-              breakpoint: 1024,
+              breakpoint: 1070,
               settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2
               }
             },
             {
-              breakpoint: 600,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
-              }
-            },
-            {
-              breakpoint: 480,
+              breakpoint: 750,
               settings: {
                 slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+              }
+            },
+            {
+              breakpoint: 750,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
               }
             }
           ]

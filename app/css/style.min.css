@@ -820,8 +820,8 @@ iframe {
 
 .main-content .clients__items .clients__item.slick-slide {
   outline: none;
-  margin-left: 8px;
-  margin-right: 8px;
+  margin-left: 13px;
+  margin-right: 13px;
 }
 
 .main-content .clients__items .clients__item-img {
@@ -1129,6 +1129,7 @@ iframe {
 
 .main-content .footer__cols .footer__col:nth-child(4) {
   max-width: 170px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1204,6 +1205,13 @@ iframe {
     margin-right: auto;
     margin-top: 50px;
   }
+  .main-content .footer__cols {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media (max-width: 1360px) {
@@ -1224,6 +1232,13 @@ iframe {
   }
   .header__inner .header__btn {
     margin-right: 25px;
+  }
+  .main-content .fast__inner .fast__title {
+    max-width: 700px;
+  }
+  .main-content .blog__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -1247,6 +1262,28 @@ iframe {
   .main-content .map__content-title {
     font-size: 35px;
   }
+  .main-content .fast__inner .fast__title {
+    font-size: 45px;
+    max-width: 500px;
+  }
+  .main-content .about {
+    margin-bottom: 30px;
+  }
+  .main-content .services {
+    padding: 65px 0 80px;
+  }
+  .main-content .headshots {
+    padding: 50px 0 30px;
+  }
+  .main-content .clients {
+    padding: 50px 0 100px;
+  }
+  .main-content .blog {
+    padding: 50px 0 70px;
+  }
+  .main-content .footer {
+    padding-top: 50px;
+  }
 }
 
 @media (max-width: 870px) {
@@ -1261,7 +1298,7 @@ iframe {
     display: none;
     position: absolute;
     right: 0;
-    top: 61px;
+    top: 83px;
     text-align: center;
     width: 25%;
     background-color: #fff;
@@ -1295,6 +1332,33 @@ iframe {
   .main-content .services__inner .services__btns button.mixitup-control-active:before {
     left: 15px;
   }
+  .main-content .footer__cols .footer__col {
+    max-width: unset;
+    width: 50%;
+  }
+  .main-content .footer__cols .footer__col:nth-child(1) {
+    max-width: unset;
+    width: 50%;
+  }
+  .main-content .footer__cols .footer__col:nth-child(2) {
+    max-width: unset;
+    width: 50%;
+  }
+  .main-content .footer__cols .footer__col:nth-child(3) {
+    max-width: unset;
+    width: 50%;
+  }
+  .main-content .footer__cols .footer__col:nth-child(4) {
+    max-width: unset;
+    width: 50%;
+  }
+  .main-content .footer__cols .footer__col-rsrc li {
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+  }
 }
 
 @media (min-width: 871px) {
@@ -1308,6 +1372,19 @@ iframe {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .main-content .fast__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .main-content .fast__inner .fast__title {
+    margin-bottom: 50px;
   }
 }
 
@@ -1334,6 +1411,12 @@ iframe {
         -ms-flex-align: center;
             align-items: center;
   }
+  .main-content .clients__items .slick-dots {
+    left: 40%;
+  }
+  .header__inner .header__nav {
+    width: 35%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1359,6 +1442,13 @@ iframe {
   .headshots__text-descr {
     font-size: 17px;
   }
+  .main-content .footer__bottom {
+    text-align: center;
+    font-size: 12px;
+  }
+  .main-content .footer__bottom-policy {
+    justify-self: right;
+  }
 }
 
 @media (max-width: 540px) {
@@ -1380,6 +1470,66 @@ iframe {
   }
   .main-content .headshots__service {
     padding: 50px 30px 50px 30px;
+  }
+  .main-content .fast__inner .fast__title {
+    font-size: 35px;
+  }
+  .main-content .footer__cols {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .main-content .footer__cols .footer__col-logo {
+    margin-bottom: 50px;
+  }
+  .main-content .footer__cols .footer__col-location {
+    margin-bottom: 25px;
+  }
+  .main-content .footer__cols .footer__col-location span {
+    padding-left: 0;
+  }
+  .main-content .footer__cols .footer__col-titles {
+    margin-bottom: 10px;
+  }
+  .main-content .footer__cols .footer__col-links {
+    margin-bottom: 25px;
+  }
+  .main-content .footer__cols .footer__col:nth-child(2) {
+    margin-bottom: 25px;
+  }
+  .main-content .footer__cols .footer__col-social {
+    width: 100%;
+    text-align: center;
+  }
+  .main-content .footer__cols .footer__col-contacts > * {
+    font-size: 24px;
+  }
+  .main-content .footer__cols .footer__col:nth-child(3) {
+    margin-bottom: 25px;
+    width: 100%;
+  }
+  .main-content .footer__cols .footer__col:nth-child(1) {
+    width: 100%;
+  }
+  .main-content .footer__cols .footer__col:nth-child(2) {
+    width: 100%;
+  }
+  .main-content .footer__cols .footer__col:nth-child(4) {
+    width: 100%;
+  }
+  .main-content .footer__cols .footer__col-location span:first-child:before {
+    font-size: 0;
+  }
+  .main-content .clients__items .slick-dots {
+    left: 30%;
+  }
+  .header__inner .header__nav {
+    width: 40%;
   }
 }
 
@@ -1403,6 +1553,21 @@ iframe {
   .main-content .map {
     display: none;
   }
+  .blog__item-img img {
+    width: 100%;
+  }
+  .main-content .blog__items .blog__item-comments a {
+    font-size: 14px;
+  }
+  .main-content .blog__items .blog__item-date {
+    font-size: 12px;
+  }
+  .header__inner .header__nav {
+    width: 50%;
+  }
+  .main-content .sessions__block-info {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 400px) {
@@ -1421,6 +1586,15 @@ iframe {
   }
   .main-content .headshots__inner .headshots__text-title {
     font-size: 35px;
+  }
+  .main-content .fast__inner .fast__title {
+    font-size: 27px;
+  }
+  .main-content .footer__bottom {
+    font-size: 10px;
+  }
+  .main-content .clients__title {
+    font-size: 39px;
   }
 }
 
