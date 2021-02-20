@@ -22,6 +22,18 @@
                 }
             }
         }
+        .header__burger{
+            display: none;
+            padding: 5px;
+            div{
+                height: 2px;
+                width: 25px;
+                background-color: #222;
+                &+div{
+                    margin-top: 5px;
+                }
+            }
+        }
         .header__btn {
             margin-left: auto;
             margin-right: 50px;
@@ -78,6 +90,7 @@
         margin-bottom: 100px;
         color: #fff;
         background: url(../images/about-bg.jpg) no-repeat center center;
+        background-size: cover;
         min-height: 510px;
         &__title {
             font-family: "GothamBold";
@@ -242,6 +255,9 @@
                     text-decoration: none;
                     background-color: #f6f6f6;
                     padding: 0 20px;
+                    &::placeholder {
+                        font-size: 14px;
+                    }
                 }
                 .map__search-btn {
                     border: none;
@@ -263,12 +279,11 @@
         }
         &__inner {
             position: relative;
-
             .services__photos {
                 max-width: 760px;
                 width: 100%;
-                margin-right: 15px;
                 display: flex;
+                margin: 0 auto;
                 flex-wrap: wrap;
                 .services__photo {
                     position: relative;
@@ -488,7 +503,7 @@
             .slick-dots {
                 position: absolute;
                 bottom: -50px;
-                left: 750px;
+                left: 48%;
                 li {
                     display: inline-block;
                     & + li {
@@ -509,14 +524,20 @@
                     }
                 }
             }
+            .slick-track{
+                display: flex;
+                justify-content: space-between;
+            }
             .clients__item {
                 max-width: 492px;
                 &.slick-slide {
-                    margin: 0 20px 0 20px;
                     outline: none;
+                    margin-left: 8px;
+                    margin-right: 8px;
                 }
                 &-img {
                     margin-bottom: 30px;
+                    width: 100%;
                 }
                 &-name {
                     text-transform: uppercase;
